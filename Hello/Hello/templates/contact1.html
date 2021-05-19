@@ -1,0 +1,47 @@
+{% extends "base1.html" %}
+{% load static %}
+{% block content %}
+ <main>
+
+        <div class="container">
+{% include 'nav.html' %}
+         <section class="contact_wrapper">
+  <div class="contact_info">
+    <h3 class="title">
+      Contact Info
+    </h3>
+
+    <ul class="icons_wrapp">
+      <li>
+        <div class="icon">
+          <span class="material-icons-outlined"> place </span>
+        </div>
+        <div class="text">
+          123 ABCDedf Road, 123 ABC, ABCD - 123456123 ABCDedf Road, 123 ABC, ABCD - 123456
+        </div>
+      </li>
+      <li>
+        <div class="icon">
+          <span class="material-icons-outlined"> mail_outline </span>
+        </div>
+        <div class="text">
+          ABCDedfRoad@ABCD.com
+        </div>
+      </li>
+      <li>
+        <div class="icon">
+          <span class="material-icons-outlined"> phone_in_talk </span>
+        </div>
+        <div class="text">
+          123-456-789
+        </div>
+      </li>
+    </ul>
+
+  </div>
+
+
+</section>
+        </div>
+ </main>
+{% endblock content %}

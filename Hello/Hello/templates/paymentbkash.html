@@ -1,0 +1,43 @@
+{% extends "base1.html" %}
+{% load crispy_forms_filters %}
+{% load static %}
+
+{% block extra_head %}
+{% endblock extra_head %}
+
+{% block content %}
+
+
+    <main>
+        <div class="container wow fadeIn"><h2 class="my-5 h2 text-center">Payment</h2>
+            <hr>
+            <div class="row">
+                <div class="col-md-12 mb-4">
+                    <div class="card text-center"><h1>You have selected Bkash Payment As your Payment method</h1></div>
+                    <hr>
+                    <br>
+                    <hr>
+                    {% include "order_snippet.html" %} <br>
+                      <div class="row">
+                        <div class="col-12  block-13">
+                    <div class="text-center">
+                        <form method="post" class="">
+                            {% csrf_token %}
+                            {{ form|crispy }}
+                            <button class="btn btn-success btn-md my-0 p" type="submit" value="submit" name="save">Pay
+                                Now
+                            </button>
+                        </form>
+                        <br> <br></div>
+
+                </div>
+                </div>
+                </div>
+            </div>
+    </main>
+
+{% endblock content %}
+
+
+
+
